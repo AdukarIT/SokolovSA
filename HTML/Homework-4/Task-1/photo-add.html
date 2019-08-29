@@ -11,6 +11,14 @@
   </header>
   <main>
   	<a href='feed.html'>Перейти в ленту</a>
+  		<h2>Создать новый пост</h2>
+		<form action='feed.html' method='GET'>
+			<p>Текст поста:</p>
+				<p><textarea rows='8' cols="45" name='post' placeholder='Введите текст поста'></textarea></p>
+				<p>Вставить фотографию<br><input type='file' name='myFile' accept='image/*'></p>
+				<p>Вставить видео<br><input type='file' name='myFile' accept='video/*'></p><br>
+				<p><input type='submit' name='submit' value='Отправить форму'></p>
+		</form>
   </main>    
 </body>
 </html>
