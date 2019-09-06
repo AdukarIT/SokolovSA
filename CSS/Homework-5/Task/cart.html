@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+	<title>Форма заказа в интернет-магазине</title>
+</head>
+<body>
+  <header>
+    <h1>Интернет-магазин бытовой техники ТЕХНО-МИР</h1>
+    <a href="#"><img src="logo.png" alt="Логотип"></a>
+  </header>
+  <main>
+  	   <div class="goods">Каталог товаров</div>
+          <ul class="1">
+            <li class="menu"><a href="#">Бытовая техника</a>
+              <ul> 
+                  <li><a href="#">Стиральные машины</a></li> 
+                  <li><a href="#">Стиральные машины</a></li> 
+                  <li><a href="#">Пылесосы</a></li> 
+                  <li><a href="#">Швейные, вышивальные машины</a></li> 
+                  <li><a href="#">Утюги</a></li> 
+                  <li><a href="#">Электровеники</a></li> 
+                  <li><a href="#">Сушилки для обуви</a></li> 
+              </ul>
+            </li>  		
+            <li class="menu"><a href="#">Техника для кухни</a>
+              <ul>
+                  <li><a href="#">Холодильники</a></li> 
+                  <li><a href="#">Кухонные плиты</a></li> 
+                  <li><a href="#">Морозильники</a></li> 
+                  <li><a href="#">Настольные плиты</a></li> 
+                  <li><a href="#">Ростеры, мини-печи</a></li> 
+                  <li><a href="#">Вытяжки</a></li> 
+                  <li><a href="#">Микроволновые печи</a></li> 
+              </ul>
+            </li>
+            <li class="menu"><a href="#">Компьютерная техника</a>
+              <ul> 
+                  <li><a href="#">Ноутбуки</a></li> 
+                  <li><a href="#">Планшеты</a></li> 
+                  <li><a href="#">Компьютеры, моноблоки</a></li> 
+                  <li><a href="#">Игровые приставки</a></li> 
+                  <li><a href="#">Серверное оборудование</a></li> 
+              </ul>  		
+            <li class="menu"><a href="#">Корзина</a></li>
+          </ul> 
+    	
+      <form name="order-goods" method=POST>
+        <h2 class="first">Оформление покупки</h2>
+          <div>Фамилия и имя:
+            <input type="text" size="35" placeholder="Введите вашу фамилию и имя" required>
+          </div>
+          <div>Номер телефона:
+            <input type="tel" size="25" placeholder="Введите ваш номер телефона" required>
+          </div>
+          <div>E-mail:
+            <input type="email" size="35" placeholder="Введите адрес электронной почты" required>
+          </div>
+          <div>Выберите способ доставки:
+            <input type="checkbox" id="check1" required>Самовывоз со склада по адресу <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.0207443158033!2d27.559438815859888!3d53.91360728010187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf96d9c55e8f%3A0x123cb285bb08b728!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JHQvtCz0LTQsNC90L7QstC40YfQsCAxNCwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1567720192982!5m2!1sru!2sby" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>ул. Максима Богдановича 14, Минск
+            <input type="checkbox" id="check2" required>Курьером по Минску
+          </div>
+          <div class="adress">Адрес доставки:
+            <textarea rows="2" cols="30" name="adress" placeholder="Введите адрес доставки"></textarea>
+          </div>
+          <div>Комментарий к заказу:
+            <textarea rows="4" cols="30" name="comments" placeholder="При необходимости добавьте комментарий"></textarea>
+          </div>
+            <label>
+              <input type="checkbox" required>Я прочитал и согласен с <a href="#">условиями доставки</a>
+            </label>
+            <input type="submit" value="Подтвердить заказ">
+      </form>
+  </main>
+  <footer>
+      <section >
+        <h2>Наши контакты</h2>
+        <p>Bремя работы: ПН-ПТ 10:00-22:00 / СБ-ВС 12:00-17:00</p>
+        <p>Адрес офиса: г. Минск, ул. Сторожовская, дом 6, помещение 250</p>
+        <p><a href="tel:+375296337777">МТС +375-29-633-77-77</a></p>
+        <p><a href="tel:+375259337777">VEL +375-25-933-77-77</a></p>
+        <p>Skype:<a href="#">Tehno-Mir</a></p>
+      </section>  
+  </footer>
+  </body>
+</html>
