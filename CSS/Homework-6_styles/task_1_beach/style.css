@@ -1,0 +1,11 @@
+* {
+	margin: 0;
+}
+
+.beach {
+	height: 100vh;
+	background-image: url(sea.jpg), url(sun.png), url(sky.jpg);
+	background-repeat: space, no-repeat, round; 
+	background-size: 100%, 10%, 100%;
+	background-position: bottom, top left, top;
+}
