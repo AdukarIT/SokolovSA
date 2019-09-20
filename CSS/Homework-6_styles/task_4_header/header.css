@@ -1,35 +1,73 @@
-/*Остальное сделать не успел... Потратил очень много времени можно сказать впустую...*/
 * {
     margin: 0;
 }
 
 body {
     font-size: 30px;
+
+}
+
+header {
+    background-color: #e8b7b7;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .logo {
-    width: 20px;
-    height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
 }
 
 .search {
-    display: block;
-    position: relative;
-    left: 250px;
-    width: 300px;
-    
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.search_text {
+    border-radius: 10px;
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+}
+
+.search_button {
+    background-color: #FFD700;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+}
+
+.search_button:hover {
+    background-color: #ff0;
 }
 
 nav {
-    display: block;
-    position: relative;
-    left: 600px;
-    width: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 35%;
+    padding: 0 0 0 100px;
+}
+
+.menu_section {
+    list-style: none;
+    cursor: pointer;
 }
 
 .phone_number {
-    display: block;
-    position: relative;
-    left: 900px;
-    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.phone_a1 {
+    color: yellow;
+}
+
+.phone_mts {
+    color: red;
 }
