@@ -1,0 +1,83 @@
+* {
+	font-size: 14px;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	
+	box-sizing: border-box;
+	background: #edeef0;
+	font-family: BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,Noto Sans Armenian,Noto Sans Bengali,Noto Sans Cherokee,Noto Sans Devanagari,Noto Sans Ethiopic,Noto Sans Georgian,Noto Sans Hebrew,Noto Sans Kannada,Noto Sans Khmer,Noto Sans Lao,Noto Sans Osmanya,Noto Sans Tamil,Noto Sans Telugu,Noto Sans Thai,sans-serif;
+
+}
+
+header {
+	background-color: #4682B4;
+	height: 42px;
+	position: fixed;
+	width: 100%;
+
+}
+.search {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	padding-left: 80px;
+	max-height: 40px;
+	
+}
+
+.search_text {
+	border-radius: 30px;
+}
+
+
+
+a {
+	text-decoration: none;
+	font-size: 13px;
+	color: #285473;
+	
+
+}
+
+.container {
+	display: flex;
+	;
+}
+
+.left__column {
+	padding-top: 55px;
+	width: 25%;
+	padding-left: 450px;
+	
+}
+
+nav {
+	vertical-align: baseline;
+
+}
+
+.logo {
+	padding-left: 250px;
+	height: 35px;
+	align-items: 
+	
+}
+
+.icon {
+	padding-top: 5px;
+	height: 20px;
+}
+
+ul {
+	list-style: none;
+	vertical-align: top;
+}
+
+li {
+	white-space: pre;
+	line-height: 27px;
+	vertical-align: baseline;
+}
