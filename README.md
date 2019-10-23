@@ -34,7 +34,8 @@
 ## Flexbox
 #### Задание 1. [Header курсов подготовки к ЦТ от Адукар](https://github.com/AdukarIT/SokolovSA/tree/master/CSS/Homework-7_flexbox/adukar)
 #### Задание 2. [VKontakte](https://github.com/AdukarIT/SokolovSA/tree/master/CSS/Homework-7_flexbox/vk)
-## Итоговое задание по разделу CSS (https://github.com/AdukarIT/SokolovSA/CSS/Project)
+## Итоговое задание по разделу CSS 
+#### [Проект](https://github.com/AdukarIT/SokolovSA/CSS/Project)
 
 
 
