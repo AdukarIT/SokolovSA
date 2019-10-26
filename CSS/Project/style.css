@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   list-style: none;
@@ -77,9 +78,8 @@ body {
   height: 38px;
   padding: 0 10px;
 }
-.nav__left > li > a > a:hover {
+.nav__left > li > a:hover {
   color: #0493da;
-  text-decoration: underline;
 }
 
 .content__top {
@@ -96,6 +96,11 @@ body {
   width: 100%;
   bottom: 0;
   background: linear-gradient(transparent, #303030FF);
+}
+@media only screen and (max-width: 768px) {
+  .content__bottom .content__bottom {
+    max-height: 70vh;
+  }
 }
 
 .aside__center {
@@ -170,6 +175,7 @@ body {
   text-align: center;
 }
 .goal .goal__food > a {
+  display: block;
   text-transform: uppercase;
   font-size: 20px;
   text-decoration: none;
@@ -202,7 +208,7 @@ body {
 
 .wrapper__center {
   display: grid;
-  grid-template-columns: repeat(4, 290px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 480px);
   grid-gap: 0.65em;
   max-width: 1200px;
@@ -224,6 +230,20 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
+}
+.wrapper__center .button_black {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 770;
+  margin-top: 20px;
+  padding: 0.8em 1em;
+  text-align: center;
+}
+.wrapper__center .button_black:after {
+  content: "➤";
+  margin-left: 5px;
 }
 .wrapper__center .box {
   border-radius: 10px;
@@ -274,6 +294,19 @@ body {
   height: 100%;
 }
 
+@media (max-width: 600px) {
+  .goal {
+    width: 600px;
+    flex-direction: column;
+    flex-flow: column wrap;
+  }
+
+  .wrapper__center {
+    display: grid;
+    grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+}
 .wrapper_cell {
   margin: 3em 0;
 }
@@ -351,11 +384,9 @@ footer .email_singUp_logIn .wrapper {
 footer .email_singUp_logIn .wrapper .cell {
   display: flex;
   justify-content: space-around;
+  vertical-align: baseline;
 }
-footer .email_singUp_logIn .wrapper .email_singUp_input {
-  margin-left: 20px;
-}
-footer .email_singUp_logIn .wrapper a {
+footer .email_singUp_logIn .wrapper .cell .button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -364,31 +395,35 @@ footer .email_singUp_logIn .wrapper a {
   font-weight: bold;
   font-style: italic;
   padding: 9px 25px 9px 15px;
+  vertical-align: sub;
+  transition: none 0.25s ease-in-out;
 }
-footer .email_singUp_logIn .wrapper a p {
+footer .email_singUp_logIn .wrapper .email_singUp_input {
+  margin-left: 20px;
+}
+footer .email_singUp_logIn .wrapper a {
+  transition: all 0.25s ease-in-out;
+}
+footer .email_singUp_logIn .wrapper p {
   font-size: 15px;
   line-height: 35px;
   padding-left: 5px;
 }
-
-.contain_menu {
+footer .contain_menu {
   padding: 30px 15px;
   max-width: 1000px;
   margin: 0 auto;
 }
-
-.logo_alt {
+footer .logo_alt {
   float: right;
   height: 110px;
   margin-bottom: 3em;
   width: 84px;
 }
-
-ul.nav {
+footer ul.nav {
   padding-left: 0;
 }
-
-.nav > li {
+footer .nav > li {
   position: relative;
   float: left;
   font-size: 12px;
@@ -396,26 +431,22 @@ ul.nav {
   line-height: 22px;
   margin-right: 30px;
 }
-
-.nav > li > a {
+footer .nav > li > a {
   text-decoration: none;
   color: #006ea5;
   display: block;
   font-weight: bold;
   transition: all 0.25s ease-in-out;
 }
-
-.address {
+footer .address {
   clear: left;
   font-size: 13px;
   margin: 30px 0;
 }
-
-.nav_social > li > a > img {
+footer .nav_social > li > a > img {
   height: 20px;
 }
-
-.copyright {
+footer .copyright {
   clear: left;
   color: #9d9c9c;
   font-size: 12px;
