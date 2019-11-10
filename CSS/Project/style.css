@@ -58,6 +58,19 @@ body {
   font-weight: bold;
   height: 40px;
 }
+.nav__right .search_text {
+  padding-left: 10px;
+  width: 120px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  font-size: 13px;
+  font-style: italic;
+  background-image: url("img/search.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 110px;
+}
 
 .nav__left {
   float: right;
@@ -80,6 +93,17 @@ body {
 }
 .nav__left > li > a:hover {
   color: #0493da;
+  visibility: visible;
+}
+.nav__left .dropdown_menu {
+  position: relative;
+}
+.nav__left .dropdown_menu > a:hover .dropdown {
+  display: block;
+}
+.nav__left .dropdown {
+  display: none;
+  position: absolute;
 }
 
 .content__top {

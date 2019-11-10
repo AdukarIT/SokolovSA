@@ -15,14 +15,28 @@
 					<ul class="nav__right">
 						<li><a href="#">about us</a></li>
 						<li><a href="#">how to help</a></li>
-						<li><a href="#">search</a></li>
+						<li>
+							<form class="search" action="#" method="POST">
+								<input class="search_text" type="text" name="search" placeholder="Search">
+							</form> 
+						</li>
 						<li><a href="#">donate</a></li>
 						<li><a href="#">adopt</a></li>
 					</ul>
 				</div>
 				<div class="left">
 					<ul class="nav__left">
-						<li><a href="#">our work</a></li>
+						<li class="dropdown_menu"><a href="#">our work</a>
+							<div class="dropdown">
+								<div class="first">
+									<ul>
+										<li><a href="#"><span>Climate</span></a></li>
+										<li><a href="#"><span>Food</span></a></li>
+										<li><a href="#"><span>Forests</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
 						<li><a href="#">species</a></li>
 						<li><a href="#">places</a></li>
 					</ul>

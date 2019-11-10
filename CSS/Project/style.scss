@@ -58,6 +58,20 @@ body {
       height: 40px;
     }
   }
+  
+  .search_text {
+    padding-left: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    font-size: 13px;
+    font-style: italic;
+    background-image: url("img/search.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 110px;
+  }
 }
 
 .nav__left {
@@ -82,9 +96,25 @@ body {
 
       >a:hover {
         color: #0493da;
+        visibility: visible;
         // text-decoration: underline;
       }
   }
+  .dropdown_menu {
+    position: relative;
+  }
+      
+  .dropdown_menu > a:hover .dropdown {
+        display: block;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+  }  
+    // // a>li:hover {
+    // //   visibility: visible;
+    // }
 }
 
 .content__top {
