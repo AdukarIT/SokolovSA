@@ -120,6 +120,45 @@ body {
   }
 }
 
+.section__top {
+  background-color: #000;
+  max-height: 600px;
+}
+.section__top .section__box {
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper__hero {
+  position: absolute;
+  width: 1000px;
+  color: #000;
+  margin: 0 auto;
+  text-align: center;
+  top: 200px;
+  left: 25%;
+}
+.wrapper__hero .hero-h1 {
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 1;
+}
+.wrapper__hero .hero-h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.section__under__top {
+  background: url("img/eyes.jpg") no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 135px;
+  background-size: cover;
+}
+
 .content__bottom {
   position: absolute;
   width: 100%;
