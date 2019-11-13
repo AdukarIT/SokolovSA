@@ -455,6 +455,61 @@ body {
     }
 }
 
+.section__animals {
+  padding-top: 114px;
+  padding-bottom: 70px;
+  background: url("img/wallpaper.jpg") repeat-x 50% 100%;
+
+  .target {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 80px 60px 50px;
+    box-sizing: border-box;
+
+  .protect {
+    font-size: 1.05em;
+    line-height: 24px;
+    color: #444444;
+  }
+  }
+
+  .masonry {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(6, 250px);
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .case-1, {
+      grid-row: span 2;
+    }
+
+    .case-3 {
+      grid-column: span 2;
+      grid-row: span 2;
+    } 
+
+    .case-4 {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+    }
+
+    .case-5 {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 2;
+    }
+
+    .case-6 {
+      grid-column: 3 / span 2;
+      grid-row: 3 / span 1;
+    }
+
+    .case-9, .case-11, .case-14 {
+      grid-column: span 2;
+    }
+  }
+}
+
 .wrapper_cell {
   margin: 3em 0;
 }
