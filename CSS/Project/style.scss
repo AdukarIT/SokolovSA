@@ -97,20 +97,41 @@ body {
       >a:hover {
         color: #0493da;
         visibility: visible;
-        // text-decoration: underline;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding-bottom: 12px;
       }
   }
+
   .dropdown_menu {
     position: relative;
   }
       
-  .dropdown_menu > a:hover .dropdown {
+  .dropdown_menu:hover  .dropdown {
         display: block;
   }
 
   .dropdown {
     display: none;
     position: absolute;
+    background-color: #fff;
+    width: 370px;
+    padding: 5px 0;
+
+      .first  {
+        ul {
+          float: left;
+          width: 35%;
+          padding-left: 25px;
+
+          li a span {
+            font-style: inherit;
+            font-size: 13px;
+            line-height: 20px;
+            color:  #999;
+          }
+        }
+      }
   }  
     
 }
@@ -169,6 +190,30 @@ body {
   width: 100%;
   height: 135px;
   background-size: cover;
+
+  .inner { 
+    text-align: center;
+    padding-top: 30px;
+  
+    .btn {
+      padding: 0.5em;
+      color: #fff;
+      background-color: #d35313;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 18px;
+    }
+        .index-cta {
+          padding-top: 15px;
+          
+          .gift {
+          font-weight: 700;
+          color: #000;
+          }
+        }
+      
+  }
 }
 
 .content__bottom {
@@ -298,6 +343,37 @@ body {
           color: #006983;
       }
     }
+  }
+  .item {
+    margin-top: 10px;
+    padding: 0 5px;
+    text-align: center;
+      > a {
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      text-decoration: none;
+      
+      > img {
+        border-radius: 50%;
+      }      
+      > p {
+        font-weight: 750;
+        color: #0493da;
+        line-height: 1;
+        margin: 0.4em 0 0.25em 0;
+      }
+    
+      }
+  }
+}
+
+.another {
+  max-width: 1000px;
+  padding: 40px 0;
+  .two {
+    padding: 30px 0;
+
   }
 }
 
@@ -594,6 +670,57 @@ body {
   }
 }
 
+.wrapper__last{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+  
+    .card-species {
+      position: relative;
+      width: 32%;
+      background: #F5F5F5FF;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+        .cta {
+          position: absolute;
+          bottom: 24px;
+          right: 0;
+        }
+
+        .btn-simple {
+          background: #000;
+          color: #fff;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: bold;
+          padding: 9px 25px 9px 15px;
+          text-transform: uppercase;
+        }
+
+        .search-label {
+          color: #d35313;
+          display: block;
+          font-size: 15px;
+          font-weight: bold;
+          padding-bottom: 17px;
+          text-transform: uppercase;
+          bottom: 50px;
+          right: 90px;
+        }
+    }
+    .search {
+          padding-top: 5%;
+        }
+}
+
+
+      /* FOOTER */
 footer {
   margin-top: 4em;
 

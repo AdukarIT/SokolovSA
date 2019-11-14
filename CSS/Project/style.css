@@ -94,16 +94,33 @@ body {
 .nav__left > li > a:hover {
   color: #0493da;
   visibility: visible;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: 12px;
 }
 .nav__left .dropdown_menu {
   position: relative;
 }
-.nav__left .dropdown_menu > a:hover .dropdown {
+.nav__left .dropdown_menu:hover .dropdown {
   display: block;
 }
 .nav__left .dropdown {
   display: none;
   position: absolute;
+  background-color: #fff;
+  width: 370px;
+  padding: 5px 0;
+}
+.nav__left .dropdown .first ul {
+  float: left;
+  width: 35%;
+  padding-left: 25px;
+}
+.nav__left .dropdown .first ul li a span {
+  font-style: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
 }
 
 .content__top {
@@ -157,6 +174,26 @@ body {
   width: 100%;
   height: 135px;
   background-size: cover;
+}
+.section__under__top .inner {
+  text-align: center;
+  padding-top: 30px;
+}
+.section__under__top .inner .btn {
+  padding: 0.5em;
+  color: #fff;
+  background-color: #d35313;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+}
+.section__under__top .inner .index-cta {
+  padding-top: 15px;
+}
+.section__under__top .inner .index-cta .gift {
+  font-weight: 700;
+  color: #000;
 }
 
 .content__bottom {
@@ -272,6 +309,34 @@ body {
 }
 .goal .goal__food > a > p.blue {
   color: #006983;
+}
+.goal .item {
+  margin-top: 10px;
+  padding: 0 5px;
+  text-align: center;
+}
+.goal .item > a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+.goal .item > a > img {
+  border-radius: 50%;
+}
+.goal .item > a > p {
+  font-weight: 750;
+  color: #0493da;
+  line-height: 1;
+  margin: 0.4em 0 0.25em 0;
+}
+
+.another {
+  max-width: 1000px;
+  padding: 40px 0;
+}
+.another .two {
+  padding: 30px 0;
 }
 
 .wrapper__center {
@@ -520,6 +585,51 @@ body {
   margin: 1.5em 0;
 }
 
+.wrapper__last {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}
+.wrapper__last .card-species {
+  position: relative;
+  width: 32%;
+  background: #F5F5F5FF;
+}
+.wrapper__last .card-species img {
+  display: block;
+  width: 100%;
+}
+.wrapper__last .card-species .cta {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+}
+.wrapper__last .card-species .btn-simple {
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 9px 25px 9px 15px;
+  text-transform: uppercase;
+}
+.wrapper__last .card-species .search-label {
+  color: #d35313;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+  bottom: 50px;
+  right: 90px;
+}
+.wrapper__last .search {
+  padding-top: 5%;
+}
+
+/* FOOTER */
 footer {
   margin-top: 4em;
 }
