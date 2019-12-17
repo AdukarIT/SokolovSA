@@ -9003,17 +9003,31 @@ let data = [
 
 /*3. Отфильтруйте массив городов так, чтобы в нём остались только города 
 из штата Калифорния, которые с 2000 по 2013 выросли в населении.*/
-let stateCalifornia = data.filter(function(elem) {
-    return elem.state == "California";
-});
-let growthCalifornia = stateCalifornia.filter(function(elem) {
-    return parseFloat(elem.growth_from_2000_to_2013) > 0;
-});
-    growthCalifornia.forEach(function(elem) {console.log(elem.city)});
+// let stateCalifornia = data.filter(function(elem) {
+//     return elem.state == "California";
+// });
+// let growthCalifornia = stateCalifornia.filter(function(elem) {
+//     return parseFloat(elem.growth_from_2000_to_2013) > 0;
+// });
+//     growthCalifornia.forEach(function(elem) {console.log(elem.city)});
  
 
 /*4. Подсчитайте, сколько миллионов населения живёт во всех городах 
 на широте от 25 до 30 градусов.*/
+let amountPopulation = data.filter(function(elem) {
+     return (elem.latitude >= 25 && elem.latitude <= 30);
+});
+let howManyMillion = amountPopulation.map(function(elem){
+    return elem.population;
+});
+let sum = howManyMillion.reduce(function(currSum, elem) {
+    return parseInt(currSum + elem);
+});
+    console.log(sum);
+
+
+
+
 
 
 /*5. Создайте массив только из тех городов, которые начинаются на букву D, 
