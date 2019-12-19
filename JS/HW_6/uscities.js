@@ -9003,13 +9003,13 @@ let data = [
 
 /*3. Отфильтруйте массив городов так, чтобы в нём остались только города 
 из штата Калифорния, которые с 2000 по 2013 выросли в населении.*/
-/*let stateCalifornia = data.filter(function(elem) {
+let stateCalifornia = data.filter(function(elem) {
     return elem.state == "California";
 });
 let growthCalifornia = stateCalifornia.filter(function(elem) {
     return parseFloat(elem.growth_from_2000_to_2013) > 0;
 });
-    growthCalifornia.forEach(function(elem) {console.log(elem.city)});*/
+    growthCalifornia.forEach(function(elem) {console.log(elem.city)});
  
 
 /*4. Подсчитайте, сколько миллионов населения живёт во всех городах 
@@ -9023,7 +9023,7 @@ let howManyMillion = amountPopulation.map(function(elem){
 let sum = howManyMillion.reduce(function(currSum, elem) {
     return currSum + parseInt(elem);
 }, 0);
-    console.log(sum);
+    console.log(sum / 1000000 + " millions of people");
 
 /*или
 let sum = data.reduce(function(currentSum, city) {
@@ -9031,15 +9031,17 @@ let sum = data.reduce(function(currentSum, city) {
         ? currentSum + parseInt(city.population)
         : currentSum;
 }, 0);
-    console.log(sum);*/
+    console.log(sum / 1000000 + " millions of people");*/
 
 /*5. Создайте массив только из тех городов, которые начинаются на букву D, 
 при этом отсортируйте элементы этого массива по названию города.*/
 let arr = data.filter(function(elem) {
     return elem.city[0] == "D";
 });
-arr.forEach(function(elem) { console.log(elem.city); });
-    console.log(arr.sort(function(a, b) { return a-b; }));
+    console.log(arr.sort(function(a, b) { 
+    return a.city > b.city ? 1 : -1; }));
+
+
 
 
 /*6. Преобразуйте представленный массив "Города" в объект "Штаты":
