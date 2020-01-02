@@ -1,7 +1,6 @@
 /*1. Все элементы label внутри таблицы. Должно быть 3 элемента.*/
-let label = document.getElementsByTagName("label");
-	console.log(label);
-
+console.log(document.querySelectorAll("#age-table label"));
+	
 // for (let label of document.body.children) {
 //   console.log(label); 
 // }
