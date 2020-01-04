@@ -26,6 +26,6 @@ console.log(document.querySelector("input"));
 console.log(document.getElementsByName("info[0]"));
 
 /*7. Элемент с именем info[0], внутри формы с именем search-person.*/
-let nol = document.getElementsByName("search-person > info[0]");
+let nol = document.querySelectorAll('form[name="search-person"] [name="info[0]"]');
 	console.log (nol);
 	
